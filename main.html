@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primary Cybersecurity</title>
+    <title>Blessed By Miscarriage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: white;
         }
         header {
-            background:#f4f4f4;
-            color: gray;
+            background:rgb(44, 44, 252);
+            color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         nav {
             margin: 20px 0;
             text-align: center;
@@ -26,53 +27,12 @@
             color: #333;
             text-decoration: none;
         }
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+  
         footer {
             text-align: center;
             padding: 10px;
-            background: #333;
+            background:rgb(44, 44, 252);
             color: #fff;
-        }
-        .circle {
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            border-radius: 100%;
-            margin-left: -10px;
-            border: 2px solid gray; 
-        }
-        .yellow-circle {
-            background-color: yellow;
-        }
-        .red-circle {
-            background-color: red;
-        }
-        .blue-circle {
-            background-color: blue;
-        }
-
-        .w3-bar-item {
-            float: left;
-            padding: 5px 10px;
-            color: black;
-            background-color: #ccc;
-            text-align: center;
-            cursor: pointer;
-            /*font-weight: bold; Make font bold */
-            border: 2px solid #ccc; /* Thicker border */
-            border-radius: 5px 5px 5px 5px;
-            margin-right: 3px;
-            /*margin-left: -10px;*/
-        }
-        .w3-bar-item:hover {
-            background-color: white;
-            /*border: 2px solid #ccc;*/
         }
 
         .tabs {
@@ -114,65 +74,28 @@
 </head>
 <body>
     <header>
-        <h1>Primary Cybersecurity&nbsp;
-            <span class="circle yellow-circle"></span>
-            <span class="circle red-circle"></span>
-            <span class="circle blue-circle"></span>
+        <h1>Blessed By Miscarriage
         </h1>
-        <p>Comprehensive Governance, Risk, and Compliance Cybersecurity Solutions</p>
+        <div class="tabs">
+            <div class="tab active" onclick="openTab(event, 'Articles')">Tab1</div>
+            <div class="tab" onclick="openTab(event, 'Mission')">Tab2</div>
+        </div>
     </header>
 
     <div class="container">
-        <div class="tabs">
-            <div class="tab active" onclick="openTab(event, 'Articles')">Articles</div>
-            <div class="tab" onclick="openTab(event, 'Mission')">About Us</div>
-        </div>
-    
         <div id="Mission" class="tab-content">
             <p>
-                Primary Cybersecurity is a blog dedicated to providing readers with the most up-to-date resources and documentation for the cybersecurity readiness of any organization, with a specialized focus on Governance, Risk, and Compliance.
+                Information for Tab2
             </p>
         </div>
-
+    
         <div id="Articles" class="tab-content active">
-            <p>
-            <div class="w3-bar w3-black">
-                <button class="w3-bar-item w3-button" onclick="scrollToSection('WhatisGRC')">What is GRC?</button>
-                <button class="w3-bar-item w3-button" onclick="scrollToSection('IndustrySpecific')">Industry Specific Regulations</button>
-                <button class="w3-bar-item w3-button" onclick="scrollToSection('Documentation')">Documentation</button>
-            </div>
+            <p>Information for Tab 1
             </p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-
-
-            <h2 id="WhatisGRC">What is GRC?</h2>
-            <p>
-                Primary Cybersecurity is an organization committed providing up-to-date documentation and resources for all things cybersecurity, with a primary focus on Governance, Risk, and Compliance.
-            </p>
-
-
-            <h2 id="IndustrySpecific">Industry Specific Regulations</h2>
-            <p>
-            Primary Cybersecurity is an organization committed providing up-to-date documentation and resources for all things cybersecurity, with a primary focus on Governance, Risk, and Compliance. 
-            </p>
-
-
-            <h2 id="Documentation">Documentation</h2>
-            <p>
-                Primary Cybersecurity is an organization committed providing up-to-date documentation and resources for all things cybersecurity, with a primary focus on Governance, Risk, and Compliance.
-            </p>
-        </div>
-
         </div>
     </div>
-
+    
     <script>
-        function scrollToSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab-content");
@@ -189,7 +112,7 @@
     </script>
 
     <footer>
-        <p>&copy; 2024 Primary Cybersecurity. All rights reserved.</p>
+        <p>&copy; 2025 Blessed By Miscarriage. All rights reserved.</p>
     </footer>
 </body>
 </html>
