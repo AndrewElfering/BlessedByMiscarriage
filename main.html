@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blessed By Miscarriage</title>
     <style>
+
+        @font-face {
+        font-family: 'MyWordFont';
+        src: url('fonts/lucida-handwriting-std-regular.ttf');
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: white;
+            background-color: rgb(21, 177, 255);
         }
         header {
-            background:rgb(44, 44, 252);
+            background:rgb(21, 177, 255);
             color: white;
             padding: 10px 0;
+            text-align: center;
+            font-family: 'MyWordFont';
+        }
+
+        h2 {
+            font-family: 'MyWordFont';
             text-align: center;
         }
 
@@ -27,74 +39,93 @@
             color: #333;
             text-decoration: none;
         }
-  
+
         footer {
             text-align: center;
             padding: 10px;
-            background:rgb(44, 44, 252);
+            background:rgb(21, 177, 255);
             color: #fff;
         }
 
-        .tabs {
-            display: flex;
-            cursor: pointer;
-        }
-        .tab {
-            padding: 5px 15px;
-            background-color: #ccc;
-            color: black;
-            /*font-weight: bold;*/
-            border: 2px solid #ccc;
-            border-radius: 5px 5px 0 0;
-            margin-right: 4px;
+        .dropdown {
+            position: relative;
+            display: inline-block;
         }
 
-        .tab:hover {
-            background-color: white;
+        .dropbtn {
+            font-family: 'MyWordFont';
+            font-size: 16px;
+            padding: 5px 15px;
+            background-color: gray;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: blue;
         }
 
         .tab-content {
             display: none;
             padding: 15px;
-            /*border: 1px solid #ccc;*/
             border-radius: 0 5px 5px 5px;
             border-top: none;
             background-color: white;
         }
-        .tab.active {
-            background-color: white;
-            border-bottom: none;
-            color: black;
-        }
         .tab-content.active {
             display: block;
         }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>Blessed By Miscarriage
-        </h1>
-        <div class="tabs">
-            <div class="tab active" onclick="openTab(event, 'Articles')">Tab1</div>
-            <div class="tab" onclick="openTab(event, 'Mission')">Tab2</div>
-        </div>
+        <h1>Blessed By Miscarriage</h1>
     </header>
+
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="openTab(event, 'Articles')">Tab1</a>
+            <a href="#" onclick="openTab(event, 'Mission')">Tab2</a>
+        </div>
+    </div>
 
     <div class="container">
         <div id="Mission" class="tab-content">
-            <p>
-                Information for Tab2
-            </p>
+            <h2>Tab2</h2>
+            <p>Information for Tab2</p>
         </div>
     
         <div id="Articles" class="tab-content active">
-            <p>Information for Tab 1
-            </p>
+            <h2>Tab1</h2>
+            <p>Information for Tab1</p>
         </div>
     </div>
-    
+
     <script>
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
@@ -102,12 +133,7 @@
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].classList.remove("active");
             }
-            tablinks = document.getElementsByClassName("tab");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-            }
             document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
         }
     </script>
 
