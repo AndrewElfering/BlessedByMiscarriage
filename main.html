@@ -57,14 +57,27 @@
 
         .dropbtn {
             font-family: 'MyWordFont';
-            font-size: 16px;
+            font-size: 24px;
             padding: 5px 15px;
             background-color: rgb(166, 166, 166);
-            color: white;
+            color: black;
             border: none;
             cursor: pointer;
             text-align: center;
-        
+            border-radius: 10px 10px;
+            border: 3px solid rgb(166, 166, 166);
+        }
+
+        .dropbtn::after {
+            content: "";
+            display: inline-block;
+            margin-left: 10px;
+            width: 0; 
+            height: 0; 
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 12px solid black; /* White filled triangle */
+            border-radius: 5px;
         }
 
         .dropdown-content {
@@ -89,7 +102,7 @@
             display: block;
         }
         .dropdown:hover .dropbtn {
-            color: darkslategray;
+           border-color: black;
         }
 
         .tab-content {
@@ -97,10 +110,18 @@
             padding: 15px;
             border-radius: 0 5px 5px 5px;
             border-top: none;
-            background-color: rgb(21, 177, 255);
+            background-color: white;
         }
         .tab-content.active {
             display: block;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -109,15 +130,16 @@
         <img src="fonts/Logo.jpg">
     </header>
 
-    <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-            <a href="#" onclick="openTab(event, 'Articles')">Tab1</a>
-            <a href="#" onclick="openTab(event, 'Mission')">Tab2</a>
-        </div>
-    </div>
-
     <div class="container">
+
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="openTab(event, 'Articles')">Tab1</a>
+                <a href="#" onclick="openTab(event, 'Mission')">Tab2</a>
+            </div>
+        </div>
+
         <div id="Mission" class="tab-content">
             <h2>Tab2</h2>
             <p>Information for Tab2</p>
