@@ -61,7 +61,7 @@
 
         .dropbtn {
             font-family: 'MyWordFont';
-            padding: 5px 10px;
+            padding: 1px 10px;
             background-color: white;
             border: none;
             cursor: pointer;
@@ -73,7 +73,15 @@
             font-weight: bold;
         }
 
-        .dropbtn::after {
+        .dropbtn img {
+            width: 25px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            vertical-align: top;
+            margin-left: 0px;
+            padding: 5px 0px;
+        }
+
+        /*.dropbtn::after {
             content: "";
             display: inline-block;
             margin-left: 10px;
@@ -82,13 +90,8 @@
             border-left: 12px solid transparent;
             border-right: 12px solid transparent;
             border-top: 12px solid transparent;
-            border-top-color: rgb(166, 166, 166) /* White border with a transparent center */
-        }
-
-        .dropbtn svg {
-            margin-left: 10px;
-            vertical-align: middle;
-        }
+            border-top-color: rgb(166, 166, 166) /* White border with a transparent center 
+        }*/
 
         .dropdown-content {
             display: none;
@@ -97,7 +100,7 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
-
+            white-space: nowrap;
         }
         .dropdown-content a {
             color: black;
@@ -111,8 +114,8 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-       /* .dropdown:hover .dropbtn {
-           border-color: rgb(166, 166, 166);
+        /*.dropdown:hover .dropbtn {
+           border-color: white;
         }*/
 
         .tab-content {
@@ -124,6 +127,7 @@
             background-color:white;
             border: 7px solid pink;
         }
+
         .tab-content.active {
             display: block;
         }
@@ -147,12 +151,7 @@
     <div class="container">
 
         <div class="dropdown">
-            <button class="dropbtn">Menu
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="4" width="4" height="16" fill="gray"/>
-                    <rect x="4" y="10" width="16" height="4" fill="gray"/>
-                </svg>
-            </button>
+            <button class="dropbtn">Menu <img src="fonts/Picture1.png"></button>
             <div class="dropdown-content">
                 <a href="#" onclick="openTab(event, 'Articles')">Our Experience</a>
                 <a href="#" onclick="openTab(event, 'ShrineofUnborn')">Shrine of the Unborn</a>
@@ -305,7 +304,7 @@
     </script>
 
     <footer>
-        <p>&copy; 2025 Blessed by Miscarriage. All rights reserved.</p>
+        <p>&copy; 2025 Blessed By Miscarriage. All rights reserved.</p>
     </footer>
 </body>
 </html>
