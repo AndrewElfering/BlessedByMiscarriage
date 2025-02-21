@@ -28,10 +28,22 @@
             position: relative;
         }
         header .dropbtn {
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
+            padding: 0 0.1875rem; /* 3px */
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 0.25rem; /* 4px */
+            text-align: center;
+            color: rgb(166, 166, 166);
+            font-size: 1.25rem; /* 20px */
+            font-weight: bold;
+            box-sizing: border-box;
+            margin-top: 0.625rem; /* 10px */
+        }
+        header .dropbtn img {
+            width: 1rem; /* 16px */
+            height: auto;
+            margin-left: 0.1875rem; /* 3px */
         }
         header img {
             width: 100%;
@@ -65,25 +77,6 @@
             display: flex;
             align-items: center;
         }
-        .dropbtn {
-            font-family: 'MyWordFont';
-            padding: 0 0.3125rem; /* 5px */
-            background-color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 0.3125rem; /* 5px */
-            text-align: center;
-            color: rgb(166, 166, 166);
-            font-size: 2.1875rem; /* 35px */
-            font-weight: bold;
-            margin-top: 4.25rem; /* 68px */
-            margin-left: 6.5625rem; /* 105px */
-            box-sizing: border-box;
-        }
-        .dropbtn img {
-            width: 1.5625rem; /* 25px */
-            height: auto;
-        }
         .dropdown-content {
             display: none;
             position: absolute;
@@ -91,8 +84,8 @@
             min-width: 10rem; /* 160px */
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* 8px 16px */
             z-index: 1;
-            top: calc(100% - 6.5625rem); /* 105px */
-            left: -1.25rem; /* 20px */
+            top: 100%;
+            left: 0;
             white-space: nowrap;
         }
         .dropdown-content a {
@@ -137,18 +130,18 @@
             border: 0.3125rem solid pink; /* 5px */
         }
         @media (max-width: 600px) {
-            body {
-                font-size: 0.75rem; /* 12px */
+            header {
+                flex-direction: column;
+                align-items: center;
+                padding: 0.5rem 0;
             }
             header .dropbtn {
                 font-size: 1.25rem; /* 20px */
                 margin-top: 0.625rem; /* 10px */
-                margin-left: 0.625rem; /* 10px */
-                left: 0.625rem; /* 10px */
-                transform: translateY(0);
             }
-            header img, .bible-verse-image {
+            header img {
                 max-width: 18.75rem; /* 300px */
+                margin-top: 0.5rem;
             }
             h2 {
                 font-size: 1.25rem; /* 20px */
@@ -164,12 +157,23 @@
                 margin: 0 0.625rem; /* 10px */
             }
         }
+        @media (min-width: 601px) {
+            header {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem 0;
+            }
+            header .dropbtn {
+                margin-top: 0.625rem; /* 10px */
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <button class="dropbtn" onclick="toggleDropdown()">Menu <img src="fonts/Picture1.png"></button>
         <img src="fonts/Logo.jpg" alt="Logo">
+        <button class="dropbtn" onclick="toggleDropdown()">Menu <img src="fonts/Picture1.png"></button>
     </header>
     <div class="container">
         <div class="dropdown">
@@ -218,5 +222,7 @@
     </footer>
 </body>
 </html>
+
+
 
 
