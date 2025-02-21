@@ -142,21 +142,31 @@
         .border-black {
             border: 5px solid pink;
         }
+        /* Mobile Specific Adjustments */
         @media (max-width: 600px) {
-            .dropbtn {
-                font-size: 20px;
-                margin-top: 10px;
-                margin-left: 20px;
+            body {
+                font-size: 12px;
+            }
+            header .dropbtn {
+                font-size: 28px;
+                margin-top: 50px;
+                margin-left: 60px;
             }
             header img, .bible-verse-image {
-                width: 100%;
                 max-width: 300px;
+            }
+            h2 {
+                font-size: 30px;
+            }
+            .tab-content {
+                padding: 20px;
+                border-width: 5px;
             }
             .container {
                 padding: 10px;
             }
-            h2 {
-                font-size: 30px;
+            nav a {
+                margin: 0 10px;
             }
         }
     </style>
@@ -213,6 +223,3 @@
     </footer>
 </body>
 </html>
-
-
-
