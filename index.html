@@ -15,11 +15,11 @@
             padding: 0;
             background-color: rgb(166, 166, 166);
             color: black;
-            font-size: 16px;
+            font-size: 1rem;
         }
         header {
             background: rgb(166, 166, 166);
-            padding: 10px 0;
+            padding: 1rem 0;
             text-align: center;
             display: flex;
             justify-content: center;
@@ -29,83 +29,75 @@
         }
         header .dropbtn {
             position: absolute;
-            left: 10px;
+            left: 1rem;
             top: 50%;
             transform: translateY(-50%);
         }
         header img {
             width: 100%;
-            max-width: 450px;
+            max-width: 28.125rem; /* 450px */
             height: auto;
-            margin-top: 5px;
-            margin-bottom: 0px;
+            margin-top: 0.3125rem; /* 5px */
         }
         h2 {
             font-family: 'MyWordFont';
             text-align: center;
             color: rgb(166, 166, 166);
-            font-size: 40px;
+            font-size: 2.5rem; /* 40px */
         }
         nav {
-            margin: 20px 0;
+            margin: 1.25rem 0; /* 20px */
             text-align: center;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 0.9375rem; /* 15px */
             color: #333;
             text-decoration: none;
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 1rem;
             background: rgb(166, 166, 166);
             color: #fff;
         }
         .dropdown {
             position: relative;
-            display: inline-block;
             display: flex;
             align-items: center;
         }
         .dropbtn {
             font-family: 'MyWordFont';
-            padding: 0px 5px;
+            padding: 0 0.3125rem; /* 5px */
             background-color: white;
             border: none;
             cursor: pointer;
-            border-radius: 5px 5px;
-            border: 5px solid white;
+            border-radius: 0.3125rem; /* 5px */
             text-align: center;
             color: rgb(166, 166, 166);
-            font-size: 35px;
+            font-size: 2.1875rem; /* 35px */
             font-weight: bold;
-            margin-top: 68px;
-            vertical-align: center;
-            margin-left: 105px;
+            margin-top: 4.25rem; /* 68px */
+            margin-left: 6.5625rem; /* 105px */
             box-sizing: border-box;
         }
         .dropbtn img {
-            width: 25px;
+            width: 1.5625rem; /* 25px */
             height: auto;
-            vertical-align: top;
-            margin-left: 0;
-            margin-right: 0;
-            padding: 0px 0;
         }
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            min-width: 10rem; /* 160px */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* 8px 16px */
             z-index: 1;
-            top: calc(100% - 105px); /* to account for the border */
-            left: -20px;
+            top: calc(100% - 6.5625rem); /* 105px */
+            left: -1.25rem; /* 20px */
             white-space: nowrap;
         }
         .dropdown-content a {
             color: black;
-            padding: 12px 16px;
+            padding: 0.75rem 1rem; /* 12px 16px */
             text-decoration: none;
             display: block;
         }
@@ -114,22 +106,22 @@
         }
         .tab-content {
             display: none;
-            padding: 25px;
-            border-radius: 10px 10px;
+            padding: 1.5625rem; /* 25px */
+            border-radius: 0.625rem; /* 10px */
             border-top: none;
             background-color: white;
-            border: 7px solid pink;
+            border: 0.4375rem solid pink; /* 7px */
         }
         .tab-content.active {
             display: block;
         }
         .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 62.5rem; /* 1000px */
+            margin: 1.25rem auto; /* 20px */
+            padding: 1.25rem; /* 20px */
             background: pink;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px 10px;
+            box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
+            border-radius: 0.625rem; /* 10px */
         }
         .bible-verse-image-wrapper {
             display: flex;
@@ -137,40 +129,39 @@
         }
         .bible-verse-image {
             width: 100%;
-            max-width: 850px;
+            max-width: 53.125rem; /* 850px */
             height: auto;
-            margin-top: 5px;
+            margin-top: 0.3125rem; /* 5px */
         }
         .border-black {
-            border: 5px solid pink;
+            border: 0.3125rem solid pink; /* 5px */
         }
-        /* Mobile Specific Adjustments */
         @media (max-width: 600px) {
             body {
-                font-size: 12px;
+                font-size: 0.75rem; /* 12px */
             }
             header .dropbtn {
-                font-size: 20px;
-                margin-top: 10px;
-                margin-left: 10px;
-                left: 10px;
+                font-size: 1.25rem; /* 20px */
+                margin-top: 0.625rem; /* 10px */
+                margin-left: 0.625rem; /* 10px */
+                left: 0.625rem; /* 10px */
                 transform: translateY(0);
             }
             header img, .bible-verse-image {
-                max-width: 300px;
+                max-width: 18.75rem; /* 300px */
             }
             h2 {
-                font-size: 20px;
+                font-size: 1.25rem; /* 20px */
             }
             .tab-content {
-                padding: 20px;
-                border-width: 5px;
+                padding: 1.25rem; /* 20px */
+                border-width: 0.3125rem; /* 5px */
             }
             .container {
-                padding: 10px;
+                padding: 0.625rem; /* 10px */
             }
             nav a {
-                margin: 0 10px;
+                margin: 0 0.625rem; /* 10px */
             }
         }
     </style>
@@ -178,7 +169,7 @@
 <body>
     <header>
         <button class="dropbtn" onclick="toggleDropdown()">Menu <img src="fonts/Picture1.png"></button>
-        <img src="fonts/Logo.jpg">
+        <img src="fonts/Logo.jpg" alt="Logo">
     </header>
     <div class="container">
         <div class="dropdown">
@@ -212,7 +203,7 @@
         }
 
         function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
+            var i, tabcontent;
             tabcontent = document.getElementsByClassName("tab-content");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].classList.remove("active");
@@ -227,4 +218,5 @@
     </footer>
 </body>
 </html>
+
 
