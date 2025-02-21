@@ -28,46 +28,46 @@
             position: relative;
         }
         header .dropbtn {
-            padding: 0 3px; /* 3px */
+            padding: 0 3px;
             background-color: white;
             border: none;
             cursor: pointer;
-            border-radius: 4px; /* 4px */
+            border-radius: 4px;
             text-align: center;
             color: rgb(166, 166, 166);
-            font-size: 1.25rem; /* 20px */
+            font-size: 1.25rem;
             font-weight: bold;
             box-sizing: border-box;
-            margin-top: 10px; /* 10px */
-            height: 2.25rem; /* Add height to ensure consistent size */
+            margin-top: 10px;
+            height: 2.25rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            line-height: 1; /* Ensure consistent line-height */
+            line-height: 1;
         }
         header .dropbtn img {
-            width: 1rem; /* 16px */
+            width: 1rem;
             height: auto;
-            margin-left: 5px; /* 5px */
+            margin-left: 5px;
         }
         header img {
             width: 100%;
-            max-width: 450px; /* 450px */
+            max-width: 450px;
             height: auto;
-            margin-top: 5px; /* 5px */
+            margin-top: 5px;
         }
         h2 {
             font-family: 'MyWordFont';
             text-align: center;
             color: rgb(166, 166, 166);
-            font-size: 2.5rem; /* 40px */
+            font-size: 2.5rem;
         }
         nav {
-            margin: 20px 0; /* 20px */
+            margin: 20px 0;
             text-align: center;
         }
         nav a {
-            margin: 0 15px; /* 15px */
+            margin: 0 15px;
             color: #333;
             text-decoration: none;
         }
@@ -87,42 +87,44 @@
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 10rem; /* 160px */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 8px 16px */
+            min-width: 10rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
-            top: -40%; /* Adjusted to move higher vertically */
+            top: -40%;
             left: 50%;
-            transform: translateX(-50%); /* Center align */
+            transform: translateX(-50%);
             white-space: nowrap;
-            margin-top: 0.25rem; /* Add some spacing */
+            margin-top: 0.25rem;
         }
         .dropdown-content a {
-            color: black;
-            padding: 12px 16px; /* 12px 16px */
+            color: rgb(166, 166, 166);
+            padding: 12px 16px;
             text-decoration: none;
             display: block;
+            border: 1px solid lightgray; /* Added border */
+            font-family: 'MyWordFont'; /* Match font style */
         }
         .dropdown-content a:hover {
             background-color: #f1f1f1;
         }
         .tab-content {
             display: none;
-            padding: 1.5625rem; /* 25px */
-            border-radius: 0.625rem; /* 10px */
+            padding: 1.5625rem;
+            border-radius: 0.625rem;
             border-top: none;
             background-color: white;
-            border: 0.4375rem solid pink; /* 7px */
+            border: 0.4375rem solid pink;
         }
         .tab-content.active {
             display: block;
         }
         .container {
-            max-width: 62.5rem; /* 1000px */
-            margin: 1.25rem auto; /* 20px */
-            padding: 1.25rem; /* 20px */
+            max-width: 62.5rem;
+            margin: 1.25rem auto;
+            padding: 1.25rem;
             background: pink;
-            box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
-            border-radius: 0.625rem; /* 10px */
+            box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+            border-radius: 0.625rem;
         }
         .bible-verse-image-wrapper {
             display: flex;
@@ -130,12 +132,12 @@
         }
         .bible-verse-image {
             width: 100%;
-            max-width: 53.125rem; /* 850px */
+            max-width: 53.125rem;
             height: auto;
-            margin-top: 0.3125rem; /* 5px */
+            margin-top: 0.3125rem;
         }
         .border-black {
-            border: 0.3125rem solid pink; /* 5px */
+            border: 0.3125rem solid pink;
         }
         @media (max-width: 600px) {
             header {
@@ -144,32 +146,32 @@
                 padding: 0.5rem 0;
             }
             header .dropbtn {
-                font-size: 1.25rem; /* 20px */
-                margin-top: 0.625rem; /* 10px */
-                height: 2.25rem; /* Ensure consistent size */
+                font-size: 1.25rem;
+                margin-top: 0.625rem;
+                height: 2rem;
             }
             header .dropbtn img {
-                margin-bottom: 8px; /* Adjust margin for mobile */
+                margin-bottom: 9px;
             }
             header img {
-                max-width: 18.75rem; /* 300px */
+                max-width: 18.75rem;
                 margin-top: 0.5rem;
             }
             h2 {
-                font-size: 1.25rem; /* 20px */
+                font-size: 1.25rem;
             }
             .tab-content {
-                padding: 1.25rem; /* 20px */
-                border-width: 0.3125rem; /* 5px */
+                padding: 1.25rem;
+                border-width: 0.3125rem;
             }
             .container {
-                padding: 0.625rem; /* 10px */
+                padding: 0.625rem;
             }
             nav a {
-                margin: 0 0.625rem; /* 10px */
+                margin: 0 0.625rem;
             }
             .dropdown-content {
-                top: -40%; /* Adjusted to move higher vertically for mobile */
+                top: -40%;
             }
         }
         @media (min-width: 601px) {
@@ -180,14 +182,14 @@
                 padding: 1rem 0;
             }
             header .dropbtn {
-                margin-top: 0.625rem; /* 10px */
-                height: 2.25rem; /* Ensure consistent size */
+                margin-top: 0.625rem;
+                height: 2.25rem;
             }
             header .dropbtn img {
-                margin-bottom: 4px; /* Adjust margin for desktop */
+                margin-bottom: 7px;
             }
             .dropdown-content {
-                top: -25%; /* Adjusted to move higher vertically for desktop */
+                top: -25%;
             }
         }
     </style>
