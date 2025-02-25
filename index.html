@@ -170,6 +170,7 @@
         .slides {
             display: none;
             width: 20rem;
+            margin-bottom: 3rem;
         }
         .arrow {
             cursor: pointer;
@@ -489,6 +490,26 @@
                 <a class="arrow left" onclick="plusSlides(-1, 3)">&#10094;</a>
                 <a class="arrow right" onclick="plusSlides(1, 3)">&#10095;</a>
             </div>
+
+            <div class="centerall"><p>Truth:</p></div>
+            <div class="slider" id="slider5">
+                <img src="fonts/Truth_1.jpg" class="slides">
+                <img src="fonts/Truth_2.jpg" class="slides">
+                <img src="fonts/Truth_3.jpg" class="slides">
+                <img src="fonts/Truth_4.jpg" class="slides">
+                <img src="fonts/Truth_5.jpg" class="slides">
+                <img src="fonts/Truth_6.jpg" class="slides">
+                <a class="arrow left" onclick="plusSlides(-1, 4)">&#10094;</a>
+                <a class="arrow right" onclick="plusSlides(1, 4)">&#10095;</a>
+            </div>
+
+            <div class="centerall"><p>God's Love:</p></div>
+            <div class="slider" id="slider6">
+                <img src="fonts/GodsLove.jpg" class="slides">
+                <a class="arrow left" onclick="plusSlides(-1, 5)">&#10094;</a>
+                <a class="arrow right" onclick="plusSlides(1, 5)">&#10095;</a>
+            </div>
+
         </div>
         
         <div id="TorelliWater" class="tab-content">
@@ -539,12 +560,14 @@
             document.querySelector(".dropbtn").style.border = "2.5px solid lightgray"; /* Remove border */
         }
         
-        var slideIndex = [1, 1, 1, 1];
-        var slideId = ["slider1", "slider2", "slider3", "slider4"]
+        var slideIndex = [1, 1, 1, 1, 1, 1];
+        var slideId = ["slider1", "slider2", "slider3", "slider4", "slider5", "slider6"]
         showSlides(1, 0);
         showSlides(1, 1);
         showSlides(1, 2);
         showSlides(1, 3);
+        showSlides(1, 4);
+        showSlides(1, 5);
         
         function plusSlides(n, no) {
           showSlides(slideIndex[no] += n, no);
